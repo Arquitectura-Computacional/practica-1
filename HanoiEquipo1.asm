@@ -1,9 +1,9 @@
-# - - - - - - - - - - - - - - - -
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # Equipo 1:
 #	- Gabriel Alejandro Hernández Romero (is722238)
 #	- Miriam Guadalupe Malta Reyes (is728351)
 #	- Rodrigo Zamora Davalos (is727254)
-# - - - - - - - - - - - - - - - -
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 .eqv startTower a0		# Torre de inicio
 .eqv auxTower a1		# Torre auxiliar
