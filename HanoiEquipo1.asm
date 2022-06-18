@@ -48,7 +48,7 @@ hanoi:
 
 	beq N, condicional, casoBase		# Si N = 1 se va a la función caso base
 
-	# Swap: Hacemos swap de la torre destino y la auxiliar
+	# Swap: Hacemos swap de la torre destino a la auxiliar
 	addi N, N, -1				# N-1 se vuelve la variable del ciclo para saber en qué disco vamos
 	add temp, auxTower, zero 		# Se guarda la torre auxiliar en el temporal
 	add auxTower, endTower, zero  		# Se intercambian el disco del origen a torre temporal
@@ -56,7 +56,7 @@ hanoi:
     					
 	jal ra, hanoi				# Saltamos a la función Hanoi
 	
-	# Swap: Hacemos swap de la torre origen y la destino
+	# Swap: Hacemos swap de la torre auxiliar a la destino
 	add temp, endTower, zero		# Se guarda en variable temporal
 	add endTower, auxTower, zero		# El valor de End pasa a ser el de Auxiliar
 	add auxTower, temp, zero		# El valor de auxiliar pasa a ser el del temporal guardado que es End
